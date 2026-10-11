@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="40%" stop-color="#12243A"/>
+      <stop offset="75%" stop-color="#0F766E"/>
+      <stop offset="100%" stop-color="#1D4E5B"/>
+    </linearGradient>
+    <linearGradient id="waterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F766E" stop-opacity="0.9"/>
+      <stop offset="35%" stop-color="#12243A"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </linearGradient>
+    <linearGradient id="hillGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#133E4D" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#0B1A28"/>
+    </linearGradient>
+    <linearGradient id="hillGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0A2833"/>
+      <stop offset="100%" stop-color="#071520"/>
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#36CFC9" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#0F766E" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0B1220" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="mistGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#36CFC9" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#36CFC9" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0F766E" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="1600" height="600" fill="url(#skyGrad)"/>
+
+  <!-- Subtle Sun / Moon Glow over Bhojtal Horizon -->
+  <circle cx="800" cy="240" r="280" fill="url(#sunGlow)"/>
+
+  <!-- Distant Hills (Idgah Hills / Shyamala Hills silhouette) -->
+  <path d="M0,320 Q240,260 480,285 T960,270 T1440,290 T1600,280 L1600,600 L0,600 Z" fill="url(#hillGrad1)"/>
+  <path d="M0,345 Q320,305 640,330 T1280,315 T1600,340 L1600,600 L0,600 Z" fill="url(#hillGrad2)"/>
+
+  <!-- Lake Horizon Mist -->
+  <rect x="0" y="310" width="1600" height="70" fill="url(#mistGrad)"/>
+
+  <!-- Lake Water Surface -->
+  <rect x="0" y="360" width="1600" height="240" fill="url(#waterGrad)"/>
+
+  <!-- Water Reflections & Gentle Waves -->
+  <g opacity="0.4" stroke="#36CFC9" stroke-linecap="round">
+    <line x1="400" y1="380" x2="600" y2="380" stroke-width="1.5" opacity="0.6"/>
+    <line x1="680" y1="375" x2="920" y2="375" stroke-width="2" opacity="0.8"/>
+    <line x1="1000" y1="380" x2="1200" y2="380" stroke-width="1.5" opacity="0.5"/>
+
+    <line x1="300" y1="410" x2="550" y2="410" stroke-width="2" opacity="0.5"/>
+    <line x1="620" y1="405" x2="980" y2="405" stroke-width="2.5" opacity="0.7"/>
+    <line x1="1050" y1="410" x2="1350" y2="410" stroke-width="2" opacity="0.5"/>
+
+    <line x1="200" y1="450" x2="520" y2="450" stroke-width="2.5" opacity="0.4"/>
+    <line x1="580" y1="445" x2="1020" y2="445" stroke-width="3" opacity="0.6"/>
+    <line x1="1100" y1="450" x2="1450" y2="450" stroke-width="2.5" opacity="0.4"/>
+
+    <line x1="150" y1="500" x2="600" y2="500" stroke-width="3" opacity="0.3"/>
+    <line x1="650" y1="495" x2="1150" y2="495" stroke-width="3.5" opacity="0.5"/>
+    <line x1="1200" y1="500" x2="1500" y2="500" stroke-width="3" opacity="0.3"/>
+
+    <line x1="100" y1="550" x2="700" y2="550" stroke-width="3.5" opacity="0.25"/>
+    <line x1="750" y1="545" x2="1300" y2="545" stroke-width="4" opacity="0.4"/>
+  </g>
+
+  <!-- Bhoj Wetland Flora / Reeds Silhouette on Shoreline -->
+  <g fill="#07121C" opacity="0.75">
+    <path d="M0,600 L0,510 Q20,490 30,530 Q50,470 65,540 Q90,500 110,600 Z"/>
+    <path d="M1480,600 Q1510,480 1530,530 Q1560,490 1575,540 Q1590,520 1600,530 L1600,600 Z"/>
+  </g>
+
+  <!-- Geometric Grid Pattern Overlay for Scientific Dashboard feel -->
+  <g opacity="0.08" stroke="#36CFC9" stroke-width="0.5">
+    <line x1="0" y1="100" x2="1600" y2="100"/>
+    <line x1="0" y1="200" x2="1600" y2="200"/>
+    <line x1="0" y1="300" x2="1600" y2="300"/>
+    <line x1="0" y1="400" x2="1600" y2="400"/>
+    <line x1="0" y1="500" x2="1600" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="600" y1="0" x2="600" y2="600"/>
+    <line x1="800" y1="0" x2="800" y2="600"/>
+    <line x1="1000" y1="0" x2="1000" y2="600"/>
+    <line x1="1200" y1="0" x2="1200" y2="600"/>
+    <line x1="1400" y1="0" x2="1400" y2="600"/>
+  </g>
+</svg>

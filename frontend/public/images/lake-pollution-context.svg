@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="civicBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="100%" stop-color="#12243A"/>
+    </linearGradient>
+    <linearGradient id="lakeWater" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#12243A"/>
+      <stop offset="50%" stop-color="#0F766E"/>
+      <stop offset="100%" stop-color="#092E3B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#civicBg)"/>
+
+  <!-- Lake and Ghat shoreline -->
+  <path d="M0,320 Q200,300 400,330 T800,310 L800,600 L0,600 Z" fill="url(#lakeWater)"/>
+
+  <!-- Ghat Stone Steps -->
+  <g fill="#172B3A" stroke="#254256" stroke-width="1.5">
+    <polygon points="0,320 300,330 280,360 0,350"/>
+    <polygon points="0,350 280,360 260,390 0,380"/>
+    <polygon points="0,380 260,390 240,420 0,410"/>
+    <polygon points="0,410 240,420 220,450 0,440"/>
+  </g>
+
+  <!-- Floating Aeration Barrier / Bubble Diffuser Line -->
+  <g stroke="#36CFC9" stroke-linecap="round">
+    <!-- Aeration pipeline line -->
+    <path d="M220,440 C350,420 500,430 780,400" stroke="#36CFC9" stroke-width="3" stroke-dasharray="8,6" fill="none"/>
+    <!-- Bubbles rising from aeration diffuser -->
+    <g fill="#36CFC9" opacity="0.6">
+      <circle cx="280" cy="425" r="4"/>
+      <circle cx="290" cy="415" r="3"/>
+      <circle cx="340" cy="420" r="5"/>
+      <circle cx="355" cy="410" r="3.5"/>
+      <circle cx="420" cy="422" r="4.5"/>
+      <circle cx="430" cy="412" r="3"/>
+      <circle cx="500" cy="418" r="5"/>
+      <circle cx="515" cy="405" r="4"/>
+      <circle cx="580" cy="415" r="4.5"/>
+      <circle cx="660" cy="410" r="5"/>
+      <circle cx="730" cy="405" r="4"/>
+    </g>
+  </g>
+
+  <!-- Floating Containment Booms (Red / Orange safety buoys) -->
+  <g fill="#D97706" stroke="#92400E" stroke-width="1">
+    <ellipse cx="260" cy="430" rx="9" ry="6"/>
+    <ellipse cx="320" cy="424" rx="9" ry="6"/>
+    <ellipse cx="390" cy="420" rx="9" ry="6"/>
+    <ellipse cx="470" cy="416" rx="9" ry="6"/>
+    <ellipse cx="560" cy="412" rx="9" ry="6"/>
+    <ellipse cx="650" cy="408" rx="9" ry="6"/>
+    <ellipse cx="740" cy="402" rx="9" ry="6"/>
+  </g>
+
+  <!-- Labels -->
+  <g font-family="sans-serif" font-size="12" fill="#64748B" letter-spacing="1.5">
+    <text x="80" y="80">CIVIC MITIGATION PROTOCOL</text>
+    <text x="80" y="105" fill="#36CFC9" font-weight="bold" font-size="14">AERATION &amp; DEBRIS CONTAINMENT</text>
+    <text x="80" y="130" font-size="11">DURGA VISARJAN ACTION READINESS</text>
+  </g>
+</svg>

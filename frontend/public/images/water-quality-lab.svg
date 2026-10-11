@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="labBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="100%" stop-color="#12243A"/>
+    </linearGradient>
+    <linearGradient id="flaskLiquid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#36CFC9" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0F766E"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#labBg)"/>
+
+  <!-- Lab bench grid -->
+  <line x1="100" y1="460" x2="700" y2="460" stroke="#36CFC9" stroke-width="2" opacity="0.4"/>
+  <rect x="80" y="462" width="640" height="40" fill="#12243A" stroke="#1E3A5F" stroke-width="1"/>
+
+  <!-- Glow -->
+  <circle cx="360" cy="340" r="160" fill="#0F766E" opacity="0.2" filter="blur(30px)"/>
+
+  <!-- Titration Burette / Stand -->
+  <g transform="translate(240, 200)">
+    <!-- Vertical rod -->
+    <rect x="-4" y="-80" width="8" height="260" fill="#64748B"/>
+    <rect x="-30" y="176" width="60" height="8" rx="2" fill="#475569"/>
+    <!-- Clamp -->
+    <rect x="-4" y="20" width="50" height="10" fill="#94A3B8"/>
+    <!-- Glass tube -->
+    <rect x="40" y="-60" width="16" height="200" rx="4" fill="rgba(54, 207, 201, 0.15)" stroke="#36CFC9" stroke-width="1.5"/>
+    <!-- Liquid in tube -->
+    <rect x="42" y="20" width="12" height="110" fill="#36CFC9" opacity="0.7"/>
+    <!-- Tip -->
+    <polygon points="44,140 52,140 48,155" fill="#36CFC9"/>
+  </g>
+
+  <!-- Erlenmeyer Flask under burette -->
+  <g transform="translate(288, 380)">
+    <path d="M-8,-60 L8,-60 L8,-40 L36,30 C40,40 32,50 18,50 L-18,50 C-32,50 -40,40 -36,30 L-8,-40 Z" fill="rgba(54, 207, 201, 0.1)" stroke="#36CFC9" stroke-width="2"/>
+    <!-- Liquid in flask -->
+    <path d="M-28,15 C-10,12 10,20 28,15 L32,32 C36,40 28,48 16,48 L-16,48 C-28,48 -36,40 -32,32 Z" fill="url(#flaskLiquid)"/>
+    <!-- Sparkles / bubbles -->
+    <circle cx="-5" cy="32" r="3" fill="#FFFFFF" opacity="0.7"/>
+    <circle cx="10" cy="25" r="2" fill="#FFFFFF" opacity="0.8"/>
+    <circle cx="4" cy="40" r="2.5" fill="#FFFFFF" opacity="0.6"/>
+  </g>
+
+  <!-- Digital pH / Dissolved Oxygen Meter -->
+  <g transform="translate(460, 340)">
+    <!-- Device Body -->
+    <rect x="0" y="0" width="180" height="120" rx="8" fill="#12243A" stroke="#36CFC9" stroke-width="1.5"/>
+    <!-- LCD Screen -->
+    <rect x="15" y="15" width="150" height="60" rx="4" fill="#0B1220" stroke="#1E3A5F" stroke-width="1"/>
+    <!-- Display Reading -->
+    <text x="30" y="52" font-family="monospace" font-size="28" font-weight="bold" fill="#36CFC9">4.82</text>
+    <text x="110" y="44" font-family="sans-serif" font-size="11" fill="#94A3B8">DO mg/L</text>
+    <text x="110" y="60" font-family="sans-serif" font-size="10" fill="#D97706">DEFICIT</text>
+    <!-- Buttons -->
+    <circle cx="35" cy="95" r="8" fill="#0F766E"/>
+    <circle cx="65" cy="95" r="8" fill="#1E3A5F"/>
+    <circle cx="95" cy="95" r="8" fill="#1E3A5F"/>
+    <!-- Sensor Cord -->
+    <path d="M150,95 C180,110 200,80 180,50 C160,20 120,-30 80,-40" fill="none" stroke="#64748B" stroke-width="3"/>
+  </g>
+
+  <!-- Legend / Info -->
+  <g font-family="sans-serif" font-size="12" fill="#64748B" letter-spacing="1.5">
+    <text x="80" y="80">LABORATORY ANALYSIS</text>
+    <text x="80" y="105" fill="#36CFC9" font-weight="bold" font-size="14">WINKLER TITRATION &amp; BOD-5</text>
+    <text x="80" y="130" font-size="11">CPCB STANDARD METHODS VERIFICATION</text>
+  </g>
+</svg>

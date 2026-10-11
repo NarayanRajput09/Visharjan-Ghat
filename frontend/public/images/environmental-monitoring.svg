@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="monBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="100%" stop-color="#12243A"/>
+    </linearGradient>
+    <radialGradient id="radarGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#36CFC9" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0F766E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#monBg)"/>
+
+  <!-- Radar / Geospatial GIS Target Rings -->
+  <g transform="translate(400, 320)" opacity="0.4" stroke="#0F766E" stroke-width="1.5" fill="none">
+    <circle r="60"/>
+    <circle r="120"/>
+    <circle r="180"/>
+    <circle r="240" stroke-dasharray="4,4"/>
+    <line x1="-250" y1="0" x2="250" y2="0"/>
+    <line x1="0" y1="-250" x2="0" y2="250"/>
+  </g>
+
+  <!-- Central Glow -->
+  <circle cx="400" cy="320" r="140" fill="url(#radarGlow)"/>
+
+  <!-- 7 Bhopal Ghat Coordinates Radar Markers -->
+  <!-- 1. Bairagarh -->
+  <g transform="translate(300, 260)">
+    <circle r="8" fill="#DC2626" stroke="#FFFFFF" stroke-width="2"/>
+    <circle r="16" fill="none" stroke="#DC2626" opacity="0.5"/>
+    <text x="14" y="4" font-family="sans-serif" font-size="11" fill="#FFFFFF" font-weight="bold">Bairagarh Kund (High)</text>
+  </g>
+  <!-- 2. Khatlapura -->
+  <g transform="translate(420, 300)">
+    <circle r="8" fill="#DC2626" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="14" y="4" font-family="sans-serif" font-size="11" fill="#FFFFFF" font-weight="bold">Khatlapura Ghat (High)</text>
+  </g>
+  <!-- 3. Prempura -->
+  <g transform="translate(360, 340)">
+    <circle r="7" fill="#D97706" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="14" y="4" font-family="sans-serif" font-size="11" fill="#CBD5E1">Prempura Ghat</text>
+  </g>
+  <!-- 4. Rani Kamlapati -->
+  <g transform="translate(405, 290)">
+    <circle r="7" fill="#D97706" stroke="#FFFFFF" stroke-width="2"/>
+    <text x="-120" y="-8" font-family="sans-serif" font-size="11" fill="#CBD5E1">Rani Kamlapati</text>
+  </g>
+  <!-- 5. Hathaikheda -->
+  <g transform="translate(530, 280)">
+    <circle r="6" fill="#15803D" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="12" y="4" font-family="sans-serif" font-size="11" fill="#94A3B8">Hathaikheda</text>
+  </g>
+  <!-- 6. Malikhedi -->
+  <g transform="translate(510, 240)">
+    <circle r="6" fill="#15803D" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="12" y="4" font-family="sans-serif" font-size="11" fill="#94A3B8">Malikhedi</text>
+  </g>
+  <!-- 7. Shahpura -->
+  <g transform="translate(440, 410)">
+    <circle r="6" fill="#15803D" stroke="#FFFFFF" stroke-width="1.5"/>
+    <text x="12" y="4" font-family="sans-serif" font-size="11" fill="#94A3B8">Shahpura Lake</text>
+  </g>
+
+  <!-- Title / Metric header -->
+  <g font-family="sans-serif" font-size="12" fill="#64748B" letter-spacing="1.5">
+    <text x="80" y="80">GEOSPATIAL INTELLIGENCE</text>
+    <text x="80" y="105" fill="#36CFC9" font-weight="bold" font-size="14">7 BHOPAL IMMERSION SITES</text>
+    <text x="80" y="130" font-size="11">DETERMINISTIC ENVIRONMENTAL RISK MAPPING</text>
+  </g>
+</svg>

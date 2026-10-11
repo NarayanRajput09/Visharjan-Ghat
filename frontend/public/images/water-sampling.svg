@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sampleBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="100%" stop-color="#12243A"/>
+    </linearGradient>
+    <linearGradient id="tealGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F766E"/>
+      <stop offset="100%" stop-color="#36CFC9"/>
+    </linearGradient>
+    <linearGradient id="waterBottle" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#36CFC9" stop-opacity="0.2"/>
+      <stop offset="60%" stop-color="#0F766E" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#12243A" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#sampleBg)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.05" stroke="#36CFC9" stroke-width="1">
+    <line x1="0" y1="150" x2="800" y2="150"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="450" x2="800" y2="450"/>
+    <line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="600" y1="0" x2="600" y2="600"/>
+  </g>
+
+  <!-- Ambient Light -->
+  <circle cx="400" cy="300" r="220" fill="#0F766E" opacity="0.15" filter="blur(40px)"/>
+
+  <!-- Water Surface -->
+  <path d="M50,420 Q200,400 400,420 T750,410 L750,550 L50,550 Z" fill="#0F766E" opacity="0.25"/>
+
+  <!-- Sampling Bottle & Rig -->
+  <g transform="translate(400, 280)">
+    <!-- Wire / Rope Cable -->
+    <line x1="0" y1="-220" x2="0" y2="-80" stroke="#64748B" stroke-width="3" stroke-dasharray="6,4"/>
+
+    <!-- Clamp mechanism -->
+    <rect x="-24" y="-80" width="48" height="16" rx="4" fill="#64748B"/>
+    <rect x="-8" y="-64" width="16" height="24" fill="#36CFC9"/>
+
+    <!-- Bottle Body (BOD / DO Sampling Bottle) -->
+    <path d="M-40,-40 C-40,-50 -20,-55 -20,-60 L20,-60 C20,-55 40,-50 40,-40 L45,110 C45,130 25,140 0,140 C-25,140 -45,130 -45,110 Z" fill="url(#waterBottle)" stroke="#36CFC9" stroke-width="2"/>
+
+    <!-- Liquid inside bottle -->
+    <path d="M-42,10 C-10,0 20,20 42,10 L44,110 C44,126 24,136 0,136 C-24,136 -44,126 -44,110 Z" fill="url(#tealGlow)" opacity="0.85"/>
+
+    <!-- Measurement Gradients / Lines on bottle -->
+    <line x1="-30" y1="-10" x2="-15" y2="-10" stroke="#FFFFFF" stroke-width="1.5" opacity="0.7"/>
+    <line x1="-32" y1="20" x2="-12" y2="20" stroke="#FFFFFF" stroke-width="2" opacity="0.9"/>
+    <line x1="-30" y1="50" x2="-15" y2="50" stroke="#FFFFFF" stroke-width="1.5" opacity="0.7"/>
+    <line x1="-32" y1="80" x2="-12" y2="80" stroke="#FFFFFF" stroke-width="2" opacity="0.9"/>
+
+    <!-- Temperature / Probe Sensor cable -->
+    <path d="M60,-30 Q120,40 100,100" stroke="#36CFC9" stroke-width="3" fill="none"/>
+    <rect x="94" y="100" width="12" height="40" rx="3" fill="#36CFC9"/>
+  </g>
+
+  <!-- Technical badges & text -->
+  <g font-family="sans-serif" font-size="12" fill="#64748B" letter-spacing="1.5">
+    <text x="80" y="80">MPPCB FIELD PROTOCOL</text>
+    <text x="80" y="105" fill="#36CFC9" font-weight="bold" font-size="14">3-PHASE VISARJAN SAMPLING</text>
+    <text x="80" y="130" font-size="11">PRE · DURING · POST IMMERSION</text>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: visarjan-ghat-watch-backend
+Version: 1.0.0
+Summary: FastAPI water-quality risk ranking and brief service for Bhopal Durga Visarjan 2026
+Requires-Python: >=3.12
+Requires-Dist: fastapi>=0.115.0
+Requires-Dist: uvicorn[standard]>=0.30.0
+Requires-Dist: pydantic>=2.8.0
+Requires-Dist: pydantic-settings>=2.4.0
+Requires-Dist: pandas>=2.2.0
+Requires-Dist: slowapi>=0.1.9
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0.0; extra == "dev"
+Requires-Dist: httpx>=0.27.0; extra == "dev"

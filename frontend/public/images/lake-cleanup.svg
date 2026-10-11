@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cleanSky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="cleanWater" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#cleanSky)"/>
+  <rect x="0" y="260" width="800" height="240" fill="url(#cleanWater)"/>
+  <!-- Floating Trash Skimmer & Aeration Bubbles -->
+  <ellipse cx="400" cy="360" rx="90" ry="30" fill="#1e293b" stroke="#38bdf8" stroke-width="3"/>
+  <line x1="310" y1="360" x2="490" y2="360" stroke="#f59e0b" stroke-width="4"/>
+  <circle cx="340" cy="330" r="6" fill="#ffffff" opacity="0.8"/>
+  <circle cx="380" cy="310" r="9" fill="#ffffff" opacity="0.7"/>
+  <circle cx="430" cy="325" r="7" fill="#ffffff" opacity="0.8"/>
+  <circle cx="460" cy="305" r="10" fill="#ffffff" opacity="0.6"/>
+  <!-- Aerator Jets -->
+  <path d="M 400 360 Q 400 240 370 200" stroke="#38bdf8" stroke-width="3" fill="none" stroke-dasharray="6,4"/>
+  <path d="M 400 360 Q 400 240 430 200" stroke="#38bdf8" stroke-width="3" fill="none" stroke-dasharray="6,4"/>
+  <text x="400" y="80" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-weight="bold" font-size="20">LAKE RESTORATION & DISSOLVED OXYGEN AERATION</text>
+  <text x="400" y="110" text-anchor="middle" fill="#a7f3d0" font-family="sans-serif" font-size="13">Municipal Floating Waste Removal & Continuous Aeration</text>
+</svg>

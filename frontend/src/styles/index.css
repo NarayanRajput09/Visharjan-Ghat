@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-deep: #0B1220;
+  --color-navy-dark: #12243A;
+  --color-teal-river: #0F766E;
+  --color-aqua-bright: #36CFC9;
+  --color-aqua-light: #E8F7F5;
+  --color-bg-primary: #F5F8FA;
+  --color-card-bg: #FFFFFF;
+  --color-text-main: #172B3A;
+  --color-text-secondary: #64748B;
+  --color-border-subtle: #DCE5EA;
+  --color-warning-amber: #D97706;
+  --color-critical-red: #DC2626;
+  --color-positive-green: #15803D;
+
+  --color-tier-high: #dc2626;
+  --color-tier-high-bg: #fef2f2;
+  --color-tier-high-border: #fecaca;
+  --color-tier-high-text: #991b1b;
+
+  --color-tier-medium: #d97706;
+  --color-tier-medium-bg: #fffbeb;
+  --color-tier-medium-border: #fde68a;
+  --color-tier-medium-text: #92400e;
+
+  --color-tier-low: #059669;
+  --color-tier-low-bg: #ecfdf5;
+  --color-tier-low-border: #a7f3d0;
+  --color-tier-low-text: #065f46;
+
+  --color-status-missing: #f1f5f9;
+  --color-status-missing-text: #475569;
+}
+
+/* Devanagari & Latin default fonts */
+body {
+  font-family: 'Noto Sans Devanagari', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Hatched pattern for not-sampled / missing data */
+.bg-status-missing {
+  background-color: #f1f5f9;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 6px,
+    rgba(148, 163, 184, 0.25) 6px,
+    rgba(148, 163, 184, 0.25) 12px
+  );
+}
+
+/* Leaflet container defaults */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  z-index: 10;
+}
+
+/* Print stylesheet - fits brief on one A4 page */
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm 15mm 12mm 15mm;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+    font-size: 11pt !important;
+    line-height: 1.35 !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-page {
+    page-break-after: avoid;
+    break-after: avoid;
+    box-shadow: none !important;
+    border: 1px solid #cbd5e1 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+  }
+
+  a {
+    text-decoration: none !important;
+    color: inherit !important;
+  }
+}
